@@ -99,6 +99,6 @@ PersistentKeepalive = 20
 
 ### Usefull links
 
-https://www.wireguard.com/quickstart/#command-line-interface  оф сайт WireGuard
-https://www.youtube.com/watch?v=XvbY-xY5dWY  видео по оплате и настройки хостинга
-https://www.youtube.com/watch?v=5Aql0V-ta8A&t=223s wireguard настраивал по этому видео, за основу взял его мануал с ТГ
+https://www.wireguard.com/quickstart/#command-line-interface  оф сайт WireGuard  
+https://www.youtube.com/watch?v=XvbY-xY5dWY  видео по оплате и настройки хостинга  
+https://www.youtube.com/watch?v=5Aql0V-ta8A&t=223s wireguard настраивал по этому видео, за основу взял его мануал с ТГ  
