@@ -40,8 +40,12 @@ ListenPort = 51830`
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 ```
-Вставляем вместо `privatekey` содержимое файла `/etc/wireguard/privatekey`
-
+Интерфейс `eth0` заменяем на свой, посмотреть можно следующей командой:
+```
+ifconfig
+```
+нужен тот, который соответствует вашему IP адресу сервера  
+Вставляем вместо `privatekey` содержимое файла `/etc/wireguard/privatekey`  
 Настраиваем IP форвардинг:
 ```
 echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
