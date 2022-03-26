@@ -105,6 +105,15 @@ PersistentKeepalive = 20
 ```
 wg show
 ```
+включить клиента на unix системе
+```
+wg-quick down client_conf
+wg-quick up client_conf
+```
+создать qr код для мобильного устройства можно с помощьюприложения `qrencode`
+```
+qrencode -t ansiutf8 < mobile.conf
+```
 
 ### Usefull links
 
