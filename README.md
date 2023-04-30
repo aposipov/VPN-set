@@ -121,14 +121,16 @@ qrencode -t ansiutf8 < mobile.conf
 [Видео по оплате и настройки хостинга](https://www.youtube.com/watch?v=XvbY-xY5dWY)    
 [WireGuard настраивал по этому видео, за основу взял его мануал с ТГ](https://www.youtube.com/watch?v=5Aql0V-ta8A&t=223s)   
 
-### wireguard in Docker
-download and install Docker
+### Wireguard in Docker
+Скачивание и установка Docker скрипт с официального сайта
 ```
 sudo curl -fsSL https://get.docker.com/ -o get-docker.sh
 ```
 ```
 sudo chmod +x ./get-docker.sh && ./get-docker.sh
 ```
+добавляем в группу docker текущего пользователя
 ```
 sudo usermod -aG docker $USER
 ```
+Я воспользовался готовым образом от [linuxserver.io](https://github.com/linuxserver/docker-wireguard) еще вариант альтернативного образа от [cmulk](https://github.com/cmulk/wireguard-docker/tree/main)
