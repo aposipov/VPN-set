@@ -122,7 +122,7 @@ qrencode -t ansiutf8 < mobile.conf
 [WireGuard настраивал по этому видео, за основу взял его мануал с ТГ](https://www.youtube.com/watch?v=5Aql0V-ta8A&t=223s)   
 
 ## Wireguard in Docker
-Скачивание и установка Docker скрипт с официального сайта
+скачивание и установка Docker скрипт с официального сайта
 ```
 sudo curl -fsSL https://get.docker.com/ -o get-docker.sh
 ```
@@ -133,7 +133,7 @@ sudo chmod +x ./get-docker.sh && ./get-docker.sh
 ```
 sudo usermod -aG docker $USER
 ```
-Я воспользовался готовым образом от [linuxserver.io](https://github.com/linuxserver/docker-wireguard) еще вариант альтернативного образа от [cmulk](https://github.com/cmulk/wireguard-docker/tree/main)
+я воспользовался готовым образом от [linuxserver.io](https://github.com/linuxserver/docker-wireguard) еще вариант альтернативного образа от [cmulk](https://github.com/cmulk/wireguard-docker/tree/main)
 ```
 docker pull linuxserver/wireguard
 ```
@@ -148,3 +148,5 @@ docker run -d \
   --restart unless-stopped \
   linuxserver/wireguard:latest
 ```
+`-p 51820:51820/udp` укажите ваш порт из конфигурации и внешний который открыт на сервере  
+`-v /<path to config>:/config` путь до директории со всеми ключами и конфигурацией на сервере
