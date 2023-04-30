@@ -1,4 +1,4 @@
-### Hosting
+## Hosting
 Критерии по выбору локации для сервера:
 - физическая удаленность от вашего местоположения (чем меньше тем лучше);
 - страна с более менее "свободным" интернетом;  
@@ -6,7 +6,7 @@
   
 Для Москвы и области отлично подойдет сервер в Германии. Я использую вот этот хостинг для сервера VPN,  
 ссылка реферальная https://gcorelabs.com/ru/hosting/?from=9826919 поэтому заранее благодарен за ее использование.
-### WireGuard setup
+## WireGuard setup
 
 Обновляем сервер:
 ```
@@ -115,13 +115,13 @@ wg-quick up client_conf
 qrencode -t ansiutf8 < mobile.conf
 ```
 
-### Usefull links
+## Usefull links
 
 [Официальный сайт WireGuard](https://www.wireguard.com/quickstart/#command-line-interface)  
 [Видео по оплате и настройки хостинга](https://www.youtube.com/watch?v=XvbY-xY5dWY)    
 [WireGuard настраивал по этому видео, за основу взял его мануал с ТГ](https://www.youtube.com/watch?v=5Aql0V-ta8A&t=223s)   
 
-### Wireguard in Docker
+## Wireguard in Docker
 Скачивание и установка Docker скрипт с официального сайта
 ```
 sudo curl -fsSL https://get.docker.com/ -o get-docker.sh
