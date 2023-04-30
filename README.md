@@ -134,3 +134,30 @@ sudo chmod +x ./get-docker.sh && ./get-docker.sh
 sudo usermod -aG docker $USER
 ```
 Я воспользовался готовым образом от [linuxserver.io](https://github.com/linuxserver/docker-wireguard) еще вариант альтернативного образа от [cmulk](https://github.com/cmulk/wireguard-docker/tree/main)
+```
+docker pull linuxserver/wireguard
+```
+```
+docker run -d \
+  --name=wireguard \
+  --cap-add=NET_ADMIN \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Etc/UTC \
+  -e SERVERURL=wireguard.domain.com `#optional` \
+  -e SERVERPORT=51820 `#optional` \
+  -e PEERS=1 `#optional` \
+  -e PEERDNS=auto `#optional` \
+  -e INTERNAL_SUBNET=10.13.13.0 `#optional` \
+  -e ALLOWEDIPS=0.0.0.0/0 `#optional` \
+  -e PERSISTENTKEEPALIVE_PEERS= `#optional` \
+  -e LOG_CONFS=true `#optional` \
+  -p 51820:51820/udp \
+  -v /path/to/appdata/config:/config \
+  --sysctl="net.ipv4.conf.all.src_valid_mark=1" \
+  --restart unless-stopped \
+  lscr.io/linuxserver/wireguard:latest
+```
+```
+docker run -d --cap-add NET_ADMIN --name wireguard     -v /etc/wireguard/:/config     -e PUID=1000 -e PGID=1000     -p 51833:51833/udp     linuxserver/wireguard
+```
