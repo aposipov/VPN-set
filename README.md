@@ -2,6 +2,10 @@
 https://github.com/bol-van/zapret  
 https://github.com/ValdikSS/GoodbyeDPI  
 
+##
+https://github.com/shadowsocks  
+
+
 ## hosting
 [hshp.host](https://hshp.host/?from=15438) - не стабильный, но дешевый  
 [timeweb.cloud](https://timeweb.cloud/r/hy62357) - отличная панель, большой выбор локаций  
