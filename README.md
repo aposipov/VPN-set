@@ -4,7 +4,7 @@ https://github.com/ValdikSS/GoodbyeDPI
 
 ##
 https://github.com/shadowsocks  
-
+https://xtls.github.io/ru/document/  
 
 ## hosting
 [hshp.host](https://hshp.host/?from=15438) - не стабильный, но дешевый  
